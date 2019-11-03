@@ -1,6 +1,8 @@
 import React from 'react';
 import Particles from "react-particles-js";
 import Layout from "../../../hoc/layouts/main";
+import SocialIcons from "../../Widgets/socialIcons";
+
 
 const paramConfig = {
   particles: {
@@ -41,6 +43,21 @@ const Home = () => {
     <Layout>
       <div className="mi-home-area mi-padding-section">
         <Particles className="mi-home-particle" params={paramConfig} />
+        <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 col-12">
+                <div className="mi-home-content">
+                  <h1>
+                    Hi, I am <span className="color-theme">Sami Ahmad Khan</span>
+                  </h1>
+                  <p>This is my website</p>
+
+                  <SocialIcons bordered />
+
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </Layout>
   )
