@@ -42,7 +42,9 @@ const Home = () => {
   return (
     <Layout>
       <div className="mi-home-area mi-padding-section">
+
         <Particles className="mi-home-particle" params={paramConfig} />
+
         <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-10 col-12">

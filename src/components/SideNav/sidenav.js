@@ -3,7 +3,6 @@ import { Link, NavLink, Route, Switch } from 'react-router-dom';
 import routesMap from '../../data/routesMap';
 import LineIcon from 'react-lineicons';
 import logo from '../../static/me_icon.jpg';
-// import Hamburger from './Hamburger';
 
 
 class SideNav extends Component {

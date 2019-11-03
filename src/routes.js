@@ -21,6 +21,7 @@ class Routes extends Component {
         <Switch>
 
           <Route path="/" exact component={Home}/>
+          <Route path="/resume" component={Resume}/>
         </Switch>
       </BrowserRouter>
 
@@ -35,5 +36,5 @@ export default Routes;
 // <Route path="/projects" component={Projects}/>
 // <Route path="/blogs" component={Blogs}/>
 // <Route path="/contact" component={Contact}/>
-// <Route path="/resume" component={Resume}/>
+//
 // <Route path="/about" exact component={About}/>
