@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes'
+import Routes from './routes';
+import "./App.scss";
 
 const App = () => {
   return(

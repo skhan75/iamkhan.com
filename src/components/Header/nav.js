@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import data from '../../data/contact';
-import '../../styling/layout/sidebar.css';
+// import '../../styling/layout/sidebar.css';
 
 const Nav = () => {
   return (

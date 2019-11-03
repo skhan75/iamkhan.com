@@ -4,8 +4,7 @@ import {Helmet} from 'react-helmet';
 const Contact = () => {
   return (
     <div className="application">
-      <Helmet title="Contact"/>
-      <h2> Contact </h2>
+      Contact
     </div>
   )
 }
