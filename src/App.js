@@ -16,8 +16,13 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home}/>
+          <Route path="/about" exact component={About}/>
+          <Route path="/blogs" component={Blogs}/>
           <Route path="/resume" component={Resume}/>
-          <Route path="/projects" component={Projects}/>s
+          <Route path="/projects" component={Projects}/>
+          <Route path="/art" component={Art}/>
+          <Route path="/photography" component={Photography}/>
+          <Route path="/contact" component={Contact}/>
         </Switch>
       </BrowserRouter>
     )
@@ -25,10 +30,3 @@ class App extends Component {
 }
 
 export default App;
-// <Route path="/art" component={Art}/>
-// <Route path="/photography" component={Photography}/>
-//
-// <Route path="/blogs" component={Blogs}/>
-// <Route path="/contact" component={Contact}/>
-//
-// <Route path="/about" exact component={About}/>

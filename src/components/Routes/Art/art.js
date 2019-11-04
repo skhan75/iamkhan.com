@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from "../../../hoc/layouts/layout";
 
 const Art = () => {
   return (
-    <div>
-      Art
-    </div>
+    <Layout>
+      Arts
+    </Layout>
   )
 }
 

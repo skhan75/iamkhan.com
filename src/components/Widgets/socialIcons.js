@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import data from '../../data/contact';
+import contactData from '../../data/contact';
 
 const SocialIcons = (props) => {
   return (
     <ul className={props.bordered ? 'mi-socialicons mi-socialicons-bordered' : 'mi-socialicons'}>
-      { data.map((s) => (
+      { contactData.social.map((s) => (
         <li key={s.label}>
           <a href={s.link}>
             <FontAwesomeIcon icon={s.icon} />
