@@ -2,16 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes';
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import App from './App';
+import "./index.css";
 import "./App.scss";
 
-const App = () => {
-  return(
-      <BrowserRouter>
-          <Routes/>
-      </BrowserRouter>
-  )
-}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

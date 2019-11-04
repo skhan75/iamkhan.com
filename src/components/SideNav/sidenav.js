@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Link, NavLink, Route, Switch } from 'react-router-dom';
-import routesMap from '../../data/routesMap';
+import { Link, NavLink } from 'react-router-dom';
 import LineIcon from 'react-lineicons';
 import logo from '../../static/me_icon.jpg';
 
 
 class SideNav extends Component {
-
   state = {
     information: "",
     navigationToggled: false
@@ -32,7 +30,6 @@ class SideNav extends Component {
         </button>
 
         <div className="mi-header-inner">
-
           <div className="mi-header-image">
             <Link to="/">
               <img src={logo}/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from "react-particles-js";
-import Layout from "../../../hoc/layouts/main";
+import Layout from "../../../hoc/layouts/layout";
 import SocialIcons from "../../Widgets/socialIcons";
 
 

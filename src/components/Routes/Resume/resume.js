@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from "../../../hoc/layouts/main";
+import Layout from "../../../hoc/layouts/layout";
 import SectionTitle from "../../Widgets/sectionTitle";
 import TrackVisibility from "react-on-screen";
 import Progress from "../../Widgets/progress";
@@ -17,12 +17,13 @@ const Resume = () => {
           <div className="mi-skills">
             <div className="row mt-30-reverse">
               { resumeData.skills.map(skill => (
-                <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
+                <TrackVisibility once className="col-md-6 mt-30" key={skill.title}>
                   <Progress title={skill.title} percentage={skill.value} />
                 </TrackVisibility>
-            )) }
+              )) }
             </div>
           </div>
+
         </div>
       </div>
 
@@ -32,7 +33,14 @@ const Resume = () => {
 
           <SubTitle title="Working Experience" icon="briefcase" />
           <div className="mi-resume-wrapper">
-            { resumeData.experience.map(workingExp => (
+            { resumeData.workExperience.map(workingExp => (
+              <ResumeContainer key={workingExp.id} resumeData={workingExp} />
+            ))}
+          </div>
+
+          <SubTitle title="Educational Qualifications" icon="book" />
+          <div className="mi-resume-wrapper">
+            { resumeData.educationalExperience.map(workingExp => (
               <ResumeContainer key={workingExp.id} resumeData={workingExp} />
             ))}
           </div>
