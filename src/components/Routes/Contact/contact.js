@@ -57,7 +57,6 @@ class Contact extends Component {
     }
   }
   handleChange = (event) => {
-    console.log("EVENT", this)
     this.setState({
        formdata:{
          ...this.state.formdata,
