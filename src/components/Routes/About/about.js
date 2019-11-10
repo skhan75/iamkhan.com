@@ -3,7 +3,9 @@ import Layout from "../../../hoc/layouts/layout";
 import SectionTitle from "../../Widgets/sectionTitle";
 import FsLightbox from "fslightbox-react";
 import * as Icon from "react-feather";
-import logo from '../../../static/me_icon.jpg';
+import imgShort from '../../../static/me_about.jpg';
+import imgLarge from '../../../static/me_icon.jpg';
+import aboutData from '../../../data/about';
 
 class About extends Component {
   state = {
@@ -29,7 +31,7 @@ class About extends Component {
               <div className="col-lg-6">
                 <div className="mi-about-image">
                   <img
-                    src={logo}
+                    src={imgShort}
                     alt="about"
                     onClick={() => this.setToggler(!this.state.toggler)}
                   />
@@ -38,7 +40,7 @@ class About extends Component {
                   </span>
                   <FsLightbox
                     toggler={this.state.toggler}
-                    sources={[logo]}
+                    sources={[imgLarge]}
                   />
                 </div>
               </div>
@@ -46,13 +48,23 @@ class About extends Component {
               <div className="col-lg-6">
                 <div className="mi-about-content">
                   <h3>
-                    I am <span className="color-theme">Sami Ahmad Khan</span>
+                    I am <span className="color-theme">{aboutData.name}</span>
                   </h3>
                   <p>
-                    I am a frontend web developer. I can provide clean code and
-                    pixel perfect design. I also make website more & more
-                    interactive with web animations.
+                    {aboutData.aboutMe}
                   </p>
+
+                  <ul>
+                    { !aboutData.name ? null : <li> <b>Full Name</b> {aboutData.name} </li> }
+                    { !aboutData.phone ? null : <li> <b>Phone</b> {aboutData.phone} </li> }
+                    { !aboutData.email ? null : <li> <b>Email</b> {aboutData.email} </li> }
+                    { !aboutData.nationality ? null : <li> <b>Nationality</b> {aboutData.nationality} </li> }
+                    { !aboutData.languages ? null : <li> <b>Languages</b> {aboutData.languages} </li> }
+                    { !aboutData.hobbies ? null : <li> <b>Hobbies</b> {aboutData.hobbies} </li> }
+                  </ul>
+
+                  <a href={aboutData.resume} className="mi-button">Download CV</a>
+
                 </div>
               </div>
 

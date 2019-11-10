@@ -52,7 +52,7 @@ const Home = () => {
                   <h1>
                     Hi, I am <span className="color-theme">Sami Ahmad Khan</span>
                   </h1>
-                  <p>This is my website</p>
+                  <p>Software Engineer | Photographer | Artist | Philanthrophist | Evangelist | GearHead</p>
 
                   <SocialIcons bordered />
 
